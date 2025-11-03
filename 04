@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+void swap (double* a, double* b) {
+    double proviz = *a;
+    *a = *b;
+    *b = proviz;
+}
+
+void BubbleSort(double* v, int n) {
+    int i,j;
+    int flag;
+    for (i=0;i<=n;i++) {
+        flag = 0;
+        for (j=i;j<=n-i-1;j++) {
+            if (*(v + j) > (*(v + j +1))) {
+                swap(v+j,v+j+1);
+                flag = 1;
+            }
+        }
+        if (flag == 0)
+            break;
+    }
+}
+
+void afiseazaVector(double* v, int n) {
+    double* end = v + n;
+    for (double* p = v; p < end; p++) {
+        printf("%f ", *p);
+    }
+    printf("\n");
+}
+
+int main(void) {
+    double V[] = {1, 789, 45.6, 2, 8.2346345};
+    int Nn = sizeof(V)/sizeof(*V);
+    BubbleSort(V,Nn);
+    afiseazaVector(V,Nn);
+}
