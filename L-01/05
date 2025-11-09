@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // Pentru malloc și free
+#include <stdlib.h>
 void citireMatrice(int *mat, int rows, int cols, const char *nume) {
     printf("Introduceți elementele: ");
     int i, j;
