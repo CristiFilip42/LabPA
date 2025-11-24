@@ -45,7 +45,7 @@ void afisare(Coada *cda){
         printf("Coada goala.\n");
         return;
     }
-    
+
     int count = 0;
     int i = cda->cap;
 
