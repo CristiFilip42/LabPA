@@ -1,0 +1,15 @@
+// EX 2
+void inorder(NodeT *p) {
+    if (p != NULL) {
+        inorder(p->left);      // 1. Vizitează tot ce e în STÂNGA
+        printf("%d ", p->id);  // 2. Afișează RĂDĂCINA (nodul curent)
+        inorder(p->right);     // 3. Vizitează tot ce e în DREAPTA
+    }
+}
+void postorder(NodeT *p) {
+    if (p != NULL) {
+        postorder(p->left);    // 1. Vizitează tot ce e în STÂNGA
+        postorder(p->right);   // 2. Vizitează tot ce e în DREAPTA
+        printf("%d ", p->id);  // 3. Afișează RĂDĂCINA (nodul curent)
+    }
+}
