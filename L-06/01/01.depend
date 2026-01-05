@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1767578479 source:c:\users\savet\documents\github\labpa\l-06\01\main.c
+	<stdio.h>
+	<stdlib.h>
+
